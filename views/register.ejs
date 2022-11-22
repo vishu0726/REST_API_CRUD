@@ -1,20 +1,69 @@
-<form>
-    <label>First Name</label>
-    <input type="text" name="first_name" required/>
-    <label>Middle Name</label>
-    <input type="text" name="middle_name"/>
-    <label>Last Name</label>
-    <input type="text" name="last_name" required/>
-    <label for="">DOB</label>
-    <input type="date" name="date" required>
-    <label for="">Email</label>
-    <input type="email" name="email" required>
-    <label for="">Phone Number</label>
-    <input type="number" name="phone" required>
-    <label for="">Company</label>
-    <input type="text" name="company">
-    <label for="">Occupation</label>
-    <input type="text" name="occupation">
-    <label for="">Password</label>
-    <input type="password" name="password" required>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .register_page{
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+        .register_page > div{
+            margin-bottom: 10px;
+        }
+        .register_page > div > button{
+            margin-left: 10%;
+        }
+        .anker{
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <form class="register_page" action="/register" method="POST">
+        <h1>Register Page</h1>
+        <div>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required/>
+        </div>
+        <div>
+            <label for="middle_name">Middle Name</label>
+            <input type="text" id="middle_name" name="middle_name"/>
+        </div>
+         <div>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required/>
+        </div>
+        <div>
+            <label for="date">DOB</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        </div>
+        <div>
+            <label for="occupation">Occupation</label>
+            <input type="text" id="occupation" name="occupation">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    <a class="anker" href="/login">to login page</a>
+</body>
+</html>
