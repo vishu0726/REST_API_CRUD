@@ -25,6 +25,12 @@ const userSchema = new mongoose.Schema({
         type:Number,
         require:true
     },
+    company:{
+        type:String
+    },
+    occupation:{
+        type:String
+    },
     password:{
         type:String,
         require:true

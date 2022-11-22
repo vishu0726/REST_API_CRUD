@@ -1,5 +1,5 @@
 const getUser = (req,res) => {
-    res.send("hello it is me");
+    res.render("login");
 }
 const postUser = (req,res) => {
     res.send("hello it is me");
